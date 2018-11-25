@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 2</name>
+    <events>
+        <event-group description="" sid="683426414000203" title="Everything2">
+            <sub-events>
+                <event-block sid="765024159020496">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="811113582000710" type="System" />
+                        <condition id="5" name="Is tag playing" sid="811455247441944" type="Audio">
+                            <param id="0" name="Tag">&quot;waterflies&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="417256681341335" type="System">
+                            <param id="0" name="Variable">VolMus</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="22" name="Set paused" sid="199860783733348" type="Audio">
+                            <param id="0" name="Tag">&quot;Dark&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="22" name="Set paused" sid="977070737011706" type="Audio">
+                            <param id="0" name="Tag">&quot;Waterflies&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="569931964380966">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="438318219508980" type="System" />
+                        <condition id="4" inverted="1" name="Is any playing" sid="995004735466774" type="Audio" />
+                        <condition id="-14" name="Compare variable" sid="855321946777543" type="System">
+                            <param id="0" name="Variable">VolMus</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="655016346514284" type="Audio">
+                            <param id="0" name="Audio file">DartOn</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;Dark&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="977945565905873">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="769528364705941" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-17" name="Set layer scale" sid="856250299277071" type="System">
+                            <param id="0" name="Layer">0</param>
+                            <param id="1" name="Scale">2.00</param>
+                        </action>
+                        <action id="-47" name="Set pixel rounding" sid="474286690316998" type="System">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="951458221648521" type="Origin">
+                            <param id="0" name="Text">&quot;ahoy&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="777338110742320" title="MainDude2">
+                    <sub-events>
+                        <event-block sid="458037262554311">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="146675337121146" type="Keyboard">
+                                    <param id="0" name="Key">32 (Space)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="397558855394296" type="Sprite">
+                                    <param id="0" name="Max Speed">122</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="367056063666061">
+                            <conditions>
+                                <condition id="2" inverted="1" name="Key is down" sid="613820028759992" type="Keyboard">
+                                    <param id="0" name="Key">32 (Space)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="707730945534867" type="Sprite">
+                                    <param id="0" name="Max Speed">82</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="537527687775353" title="Save&amp;Load2">
+                    <sub-events>
+                        <event-block sid="586708992476999">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="471756183007913" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set item" sid="662814485165615" type="LocalStorage">
+                                    <param id="0" name="Key">&quot;Star&quot;</param>
+                                    <param id="1" name="Value">&quot;0&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="966418732509722">
+                            <conditions />
+                            <actions />
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="357929381036201" title="Action2">
+                    <sub-events>
+                        <event-group description="" sid="371832884037357" title="Text2">
+                            <sub-events>
+                                <variable constant="0" name="Action" sid="890555306929255" static="0" type="number">0</variable>
+                                <variable constant="0" name="TextLevel" sid="352040399364798" static="0" type="number">0</variable>
+                                <variable constant="0" name="TextType" sid="609253520273619" static="0" type="number">0</variable>
+                                <event-block sid="557228140096013">
+                                    <conditions>
+                                        <condition id="-1" name="Every tick" sid="326035023478326" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="287443631798323" type="Var">
+                                            <param id="0" name="Text">TextLevel</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="309559169620367">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="967605836255004" type="Keyboard">
+                                            <param id="0" name="Key">67 (C)</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="996858736495333" type="System">
+                                            <param id="0" name="Variable">TextLevel</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="858403290695788" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="641803912714413" type="System">
+                                            <param id="0" name="Variable">TextLevel</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="276798610049025">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="661406621931188" type="Keyboard">
+                                            <param id="0" name="Key">67 (C)</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="581813600304100" type="System">
+                                            <param id="0" name="Variable">TextLevel</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="439653641222722" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="355043808353022" type="System">
+                                            <param id="0" name="Variable">TextLevel</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="697961953861200">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="293478448165323" type="Keyboard">
+                                            <param id="0" name="Key">67 (C)</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="611175771012692" type="System">
+                                            <param id="0" name="Variable">TextLevel</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="894557522694834" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="643659611218867" type="System">
+                                            <param id="0" name="Variable">TextLevel</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="465065647127663">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="626804143798856" type="System">
+                                            <param id="0" name="Interval (seconds)">0.02</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="663617610833429" type="Real">
+                                            <param id="0" name="Text">left(Origin.Text, len(Real.Text) + 1)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="544926726352219">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="448967475696462" type="System">
+                                            <param id="0" name="Variable">TextLevel</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="409601324543935" type="Real">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="149942369605327">
+                                    <conditions>
+                                        <condition id="9" name="Is overlapping at offset" sid="622237440777217" type="Sprite">
+                                            <param id="0" name="Object">Sprite3</param>
+                                            <param id="1" name="Offset X">1</param>
+                                            <param id="2" name="Offset Y">0</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="459750318728790" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="763162809203703" type="System">
+                                            <param id="0" name="Variable">TextLevel</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="282401566864093" type="System">
+                                            <param id="0" name="Seconds">0.1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="448424966789543" type="Origin">
+                                            <param id="0" name="Text">&quot;It seems to be a puddle of something that looks like water&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="927024859367619" type="System">
+                                            <param id="0" name="Variable">TextLevel</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="416165431738240">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="245653760618316" type="System">
+                                            <param id="0" name="Variable">TextLevel</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="458513337004627" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="707059035130841" type="Origin">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="214367680262134" type="System">
+                                            <param id="0" name="Seconds">0.1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="888663890733801" type="Origin">
+                                            <param id="0" name="Text">&quot;Actually.. It is water&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="672513382329291">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="913747001062854" type="System">
+                                            <param id="0" name="Variable">TextLevel</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="945919753908534" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="381123115075063" type="Origin">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="576238249107525" type="System">
+                                            <param id="0" name="Seconds">0.1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="273256541260354" type="Origin">
+                                            <param id="0" name="Text">&quot;Still.. You shouldnt drink this&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="175530398660608">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="509095862805423" type="System">
+                                            <param id="0" name="Variable">TextLevel</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="183669097060992" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="836547106488480" type="System">
+                                            <param id="0" name="Seconds">0.1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="628644501712541" type="System">
+                                            <param id="0" name="Variable">TextLevel</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="129274032960086" type="Origin">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" sid="333968561318679" title="Other2" />
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="256992539308890" title="OtherThings2">
+                    <sub-events>
+                        <event-group description="" sid="865628627885952" title="BackgroundMovement2">
+                            <sub-events>
+                                <event-block sid="562561159254296">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="800875248146353" type="Sprite">
+                                            <param id="0" name="Object">Sprite6</param>
+                                        </condition>
+                                        <condition id="-1" name="Compare X" sid="615476692607157" type="Sprite">
+                                            <param id="0" name="Comparison">3</param>
+                                            <param id="1" name="X co-ordinate">180</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="0" name="Stop" sid="951204181798415" type="Sprite" />
+                                        <action id="-2" name="Go to layout" sid="913198764474320" type="System">
+                                            <param id="0" name="Layout">Line</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="622158684116146" type="System">
+                                            <param id="0" name="Variable">EnterWay</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="782294746128364">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="896961696320543" type="Sprite">
+                                            <param id="0" name="Object">Sprite6</param>
+                                        </condition>
+                                        <condition id="-2" name="Compare Y" sid="553402892157663" type="Sprite">
+                                            <param id="0" name="Comparison">3</param>
+                                            <param id="1" name="Y co-ordinate">96</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="0" name="Stop" sid="406852014655573" type="Sprite" />
+                                        <action id="-2" name="Go to layout" sid="788440816475755" type="System">
+                                            <param id="0" name="Layout">Big</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="873615876571096" type="System">
+                                            <param id="0" name="Variable">EnterWay</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="461289409657170">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="761197649959196" type="Sprite">
+                                            <param id="0" name="Object">Sprite6</param>
+                                        </condition>
+                                        <condition id="-1" name="Compare X" sid="548029843308526" type="Sprite">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="X co-ordinate">181</param>
+                                        </condition>
+                                        <condition id="-2" name="Compare Y" sid="359792269913894" type="Sprite">
+                                            <param id="0" name="Comparison">4</param>
+                                            <param id="1" name="Y co-ordinate">96</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="0" name="Stop" sid="465324015003497" type="Sprite" />
+                                        <action id="-2" name="Go to layout" sid="855582862962357" type="System">
+                                            <param id="0" name="Layout">Big</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="801095060924007" type="System">
+                                            <param id="0" name="Variable">EnterWay</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="666143860816310">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="349175683167732" type="System">
+                                            <param id="0" name="Variable">EnterWay</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="194019508676858" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-1" name="Set X" sid="691414209029230" type="Sprite">
+                                            <param id="0" name="X">16</param>
+                                        </action>
+                                        <action id="-2" name="Set Y" sid="958804317172267" type="Sprite">
+                                            <param id="0" name="Y">160</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="802260983976114">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="388441169664908" type="System">
+                                            <param id="0" name="Variable">EnterWay</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="326310482045557" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-1" name="Set X" sid="655933798987453" type="Sprite">
+                                            <param id="0" name="X">448</param>
+                                        </action>
+                                        <action id="-2" name="Set Y" sid="582338469376616" type="Sprite">
+                                            <param id="0" name="Y">160</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="507023225172865">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="865210235079866" type="System">
+                                            <param id="0" name="Variable">EnterWay</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="256263344995566" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-1" name="Set X" sid="138633879486000" type="Sprite">
+                                            <param id="0" name="X">400</param>
+                                        </action>
+                                        <action id="-2" name="Set Y" sid="217232525154901" type="Sprite">
+                                            <param id="0" name="Y">-6</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-block sid="595069611089154">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="886605526274072" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="275215582892065" type="ShadowLight">
+                                    <param id="0" name="Object">Sprite</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

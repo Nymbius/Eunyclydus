@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MainScren</name>
+    <events>
+        <variable constant="0" name="VolFX" sid="879417906373928" static="0" type="number">0</variable>
+        <variable constant="0" name="VolMus" sid="858838593380895" static="0" type="number">0</variable>
+        <event-block sid="280314343542983">
+            <conditions>
+                <condition id="0" name="On clicked" sid="940345482136422" type="Button" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="282508351358870" type="System">
+                    <param id="0" name="Layout">Line</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="169373129451123">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="363274229898935" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="551436653371874" type="Text3">
+                    <param id="0" name="Text">&quot;This isnt working yet :p&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="425234366917744">
+            <conditions>
+                <condition id="0" name="On clicked" sid="723504971244213" type="Button2" />
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="159316299402145" type="Browser">
+                    <param id="0" name="URL">&quot;https://nymbius.itch.io/eunyclydus/devlog&quot;</param>
+                    <param id="1" name="Tag">&quot;Updates&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="811888712367525">
+            <conditions>
+                <condition id="0" name="On clicked" sid="414864674358294" type="Button3" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="747866717578079" type="Text3">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="140861142399051">
+            <conditions>
+                <condition id="1" name="Is checked" sid="360020971612444" type="Button4" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="492556589621927" type="System">
+                    <param id="0" name="Variable">VolFX</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="572055897768086">
+            <conditions>
+                <condition id="1" inverted="1" name="Is checked" sid="338886777676865" type="Button4" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="479905744031561" type="System">
+                    <param id="0" name="Variable">VolFX</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="597543068245149">
+            <conditions>
+                <condition id="1" name="Is checked" sid="425150493483244" type="Button5" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="126457859043024" type="System">
+                    <param id="0" name="Variable">VolMus</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="181850261936071">
+            <conditions>
+                <condition id="1" inverted="1" name="Is checked" sid="992172900716610" type="Button5" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="687851959348330" type="System">
+                    <param id="0" name="Variable">VolMus</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
